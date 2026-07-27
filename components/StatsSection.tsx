@@ -10,7 +10,7 @@ const stats = [
 export function StatsSection() {
   return (
     <section id="stats" className="mx-auto w-full max-w-6xl px-4 py-16">
-      <div className="paper-card grid grid-cols-2 gap-y-10 p-10 md:grid-cols-3">
+      <div className="paper-card grid grid-cols-1 gap-y-10 p-10 md:grid-cols-3">
         {stats.map((s, i) => (
           <motion.div key={s.l} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ delay: i * 0.06 }}

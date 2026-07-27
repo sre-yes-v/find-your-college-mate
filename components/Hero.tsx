@@ -5,7 +5,7 @@ import { Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="search" className="relative mx-auto w-full max-w-7xl px-4 pt-16 pb-24 md:pt-24 md:pb-32">
+    <section id="search" className="relative mx-auto w-full max-w-7xl px-4 pt-20 pb-24 md:pt-28 md:pb-32">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px] grid-bg opacity-70" />
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ export function Hero() {
 
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}
         className="relative mx-auto mt-14 max-w-4xl">
-        <div className="relative rounded-[40px] bg-gradient-to-br from-primary via-primary-deep to-secondary p-6 shadow-[var(--shadow-lift)] md:p-14">
+        <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-br from-primary via-primary-deep to-secondary p-6 shadow-[var(--shadow-lift)] md:p-14">
           <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-mint/20 blur-3xl" />
           <div className="relative mx-auto max-w-2xl">
