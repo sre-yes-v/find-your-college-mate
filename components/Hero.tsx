@@ -32,12 +32,12 @@ export function Hero() {
           <div className="relative mx-auto max-w-2xl">
             <div className="mb-5 flex items-center justify-between text-white/70">
               <span className="label-eyebrow !text-white/60">Live search</span>
-              <span className="text-xs">1,200+ students indexed</span>
+              <span className="text-xs">140+ students indexed</span>
             </div>
             <SearchBar />
             <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-white/70">
               <span>Try:</span>
-              {["Aarav","Data Science","2nd Year","Group A"].map(t => (
+              {["Sreyes","BCA","3rd Year","Group A"].map(t => (
                 <span key={t} className="rounded-full border border-white/20 bg-white/5 px-3 py-1">{t}</span>
               ))}
             </div>

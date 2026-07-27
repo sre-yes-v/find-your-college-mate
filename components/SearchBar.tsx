@@ -140,7 +140,7 @@ export function SearchBar() {
 
         <div className="hidden items-center gap-1 rounded-full border border-border bg-background px-2.5 py-1 text-[11px] text-muted-foreground md:flex">
           <Command className="h-3 w-3" />
-          K
+          search
         </div>
       </motion.div>
 

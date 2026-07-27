@@ -9,7 +9,22 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "SHC Connect — Find Your Student Group",
-  description: "Search your name and instantly find your Sacred Heart College student group.",
+  description: "Search your name and instantly find your student group.",
+  twitter: {
+    card: "summary_large_image",
+    title: "SHC Connect — Find Your Student Group",
+    description: "Search your name and instantly find your student group.",
+    images: "/logo.jpg",
+  },
+  openGraph: {
+    title: "SHC Connect — Find Your Student Group",
+    description: "Search your name and instantly find your student group.",
+    siteName: "SHC Connect",
+    url: "https://shcconnect.vercel.app",
+    images: "/logo.jpg",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

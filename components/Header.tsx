@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -15,9 +16,7 @@ export function Header() {
     >
       <div className="flex w-full items-center justify-between rounded-full border border-border bg-surface/80 px-3 py-2 shadow-[var(--shadow-paper)] backdrop-blur-xl">
         <Link href="/" className="flex items-center gap-2 pl-2">
-          <div className="grid h-8 w-8 place-items-center rounded-full bg-primary text-primary-foreground">
-            <span className="text-[13px] font-black">S</span>
-          </div>
+            <Image src="/logo.jpg" alt="Logo" width={30} height={30} />
           <span className="text-sm font-black tracking-tight">SHC Connect</span>
         </Link>
 

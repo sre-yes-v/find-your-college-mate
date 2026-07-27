@@ -2,16 +2,15 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { k: "1,200+", l: "Students indexed" },
-  { k: "8", l: "Active groups" },
-  { k: "6", l: "Departments" },
-  { k: "< 1s", l: "Live search time" },
+  { k: "140+", l: "Students indexed" },
+  { k: "11", l: "Groups" },
+  { k: "5", l: "Departments" },
 ];
 
 export function StatsSection() {
   return (
     <section id="stats" className="mx-auto w-full max-w-6xl px-4 py-16">
-      <div className="paper-card grid grid-cols-2 gap-y-10 p-10 md:grid-cols-4">
+      <div className="paper-card grid grid-cols-2 gap-y-10 p-10 md:grid-cols-3">
         {stats.map((s, i) => (
           <motion.div key={s.l} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ delay: i * 0.06 }}
