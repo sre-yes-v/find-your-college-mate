@@ -33,7 +33,7 @@ export function SearchDropdown({ open, results, activeIndex, onSelect, onHover, 
               <div className="label-eyebrow px-3 py-2">
                 {results.length} match{results.length === 1 ? "" : "es"}
               </div>
-              <div className="flex flex-col">
+              <div className="flex max-h-80 flex-col overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-primary/30 scrollbar-track-transparent">
                 {results.map((s, i) => {
                   const initials = s.name.split(" ").map(n => n[0]).slice(0, 2).join("");
                   return (
