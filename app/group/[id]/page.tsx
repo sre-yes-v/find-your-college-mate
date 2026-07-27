@@ -28,7 +28,7 @@ export default async function GroupPage({ params }: Props) {
     <main className="min-h-screen">
       <Header />
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-16">
+      <section className="mx-auto w-full max-w-6xl px-4 py-16 pt-30">
         <div className="paper-card relative overflow-hidden !rounded-[36px] p-8 md:p-14">
           <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-mint blur-3xl" />
 
