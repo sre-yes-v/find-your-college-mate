@@ -32,6 +32,13 @@
   --shadow-lift: 0 30px 80px -20px rgba(15,90,61,.35);
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) hsl(var(--surface));
+  scrollbar-gutter: stable both-edges;
+  scroll-behavior: smooth;
+}
+
 * { border-color: hsl(var(--border)); }
 body {
   background: hsl(var(--background));
