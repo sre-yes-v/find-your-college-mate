@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "SHC Connect — Find Your Student Group",
     description: "Search your name and instantly find your student group.",
     siteName: "SHC Connect",
-    url: "https://shcconnect.vercel.app",
+    url: "https://shc-connect.vercel.app",
     images: "/logo.jpg",
     locale: "en_US",
     type: "website",
