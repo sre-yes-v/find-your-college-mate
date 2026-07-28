@@ -101,7 +101,23 @@ export function SearchBar() {
             setQuery(e.target.value);
             setActiveIndex(0);
           }}
-          onFocus={() => setFocused(true)}
+          onFocus={() => {
+            setFocused(true);
+
+            requestAnimationFrame(() => {
+              const rect = containerRef.current?.getBoundingClientRect();
+              if (!rect) return;
+
+              const estimatedDropdownHeight = 360;
+
+              if (window.innerHeight - rect.bottom < estimatedDropdownHeight) {
+                window.scrollBy({
+                  top: estimatedDropdownHeight - (window.innerHeight - rect.bottom) + 32,
+                  behavior: "smooth",
+                });
+              }
+            });
+          }}
           onBlur={() => setTimeout(() => setFocused(false), 150)}
           onKeyDown={(e) => {
             if (!open) return;

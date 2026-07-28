@@ -5,7 +5,7 @@ import { Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="search" className="relative mx-auto w-full max-w-7xl px-4 pt-20 pb-24 md:pt-28 md:pb-32">
+    <section id="search" className="relative mx-auto w-full max-w-7xl px-4 pt-30 pb-24 md:pt-28 md:pb-32">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px] grid-bg opacity-70" />
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
@@ -35,9 +35,9 @@ export function Hero() {
               <span className="text-xs">140+ students indexed</span>
             </div>
             <SearchBar />
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-white/70">
+            <div className="mt-4 flex flex-wrap items-center justify-baseline gap-2 text-xs text-white/70">
               <span>Try:</span>
-              {["Sreyes","BCA","3rd Year","Group A"].map(t => (
+              {["Sreyes","BCA",].map(t => (
                 <span key={t} className="rounded-full border border-white/20 bg-white/5 px-3 py-1">{t}</span>
               ))}
             </div>

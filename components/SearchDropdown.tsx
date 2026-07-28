@@ -50,11 +50,9 @@ export function SearchDropdown({ open, results, activeIndex, onSelect, onHover, 
                       </div>
                       <div className="flex-1">
                         <div className="text-sm font-semibold">{s.name}</div>
-                        <div className="text-xs text-muted-foreground">{s.department} · {s.year}</div>
+                        <div className="text-xs text-muted-foreground">{s.department}</div>
                       </div>
-                      <span className="rounded-full bg-background px-2 py-1 text-[10px] font-semibold text-primary">
-                        {s.groupId.replace("g-", "Group ")}
-                      </span>
+                      
                     </button>
                   );
                 })}

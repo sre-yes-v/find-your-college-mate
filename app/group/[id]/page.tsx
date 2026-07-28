@@ -67,50 +67,7 @@ export default async function GroupPage({ params }: Props) {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {group.members.map((s) => {
-            const initials = s.name
-              .split(" ")
-              .map((n) => n[0])
-              .slice(0, 2)
-              .join("");
-
-            return (
-              <article
-                key={s.id}
-                className="paper-card flex flex-col gap-5 p-6"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-primary to-secondary text-base font-bold text-primary-foreground">
-                    {initials}
-                  </div>
-
-                  <span className="rounded-full border border-border bg-background px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                    {s.gender}
-                  </span>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-bold">{s.name}</h3>
-
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    {s.department}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between border-t border-border pt-4">
-                  <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                    Year
-                  </span>
-
-                  <span className="text-sm font-semibold text-primary">
-                    {s.year}
-                  </span>
-                </div>
-              </article>
-            );
-          })}
-        </div>
+        
       </section>
 
       <Footer />

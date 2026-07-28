@@ -9,7 +9,6 @@ export function Footer() {
           <Image src="/logo.jpg" alt="Logo" width={30} height={30} />
           <div>
             <div className="text-sm font-black">SHC Connect</div>
-            <div className="text-xs text-muted-foreground">Sacred Heart College</div>
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
