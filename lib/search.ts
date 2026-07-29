@@ -7,9 +7,7 @@ export function searchStudents(query: string, limit = 8): Student[] {
   return allStudents
     .filter(
       (s) =>
-        s.name.toLowerCase().includes(q) ||
-        s.department.toLowerCase().includes(q) ||
-        s.groupId.toLowerCase().includes(q),
+        s.name.toLowerCase().includes(q)
     )
     .slice(0, limit);
 }

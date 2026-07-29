@@ -35,12 +35,7 @@ export function Hero() {
               <span className="text-xs">140+ students indexed</span>
             </div>
             <SearchBar />
-            <div className="mt-4 flex flex-wrap items-center justify-baseline gap-2 text-xs text-white/70">
-              <span>Try:</span>
-              {["Sreyes","BCA",].map(t => (
-                <span key={t} className="rounded-full border border-white/20 bg-white/5 px-3 py-1">{t}</span>
-              ))}
-            </div>
+            
           </div>
         </div>
       </motion.div>
